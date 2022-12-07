@@ -34,6 +34,9 @@ if [[ "$model" == "ParT" ]]; then
 elif [[ "$model" == "PN" ]]; then
     modelopts="networks/CMSAK4_PN.py"
     batchopts="--batch-size 512 --start-lr 1e-2"
+elif [[ "$model" == "PNXT" ]]; then
+    modelopts="networks/CMSAK4_PNXT.py"
+    batchopts="--batch-size 512 --start-lr 1e-2"
 else
     echo "Invalid model $model!"
     exit 1
