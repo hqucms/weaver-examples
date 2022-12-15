@@ -1,0 +1,3 @@
+[submodule "JetClass"]
+	path = JetClass
+	url = https://github.com/jet-universe/particle_transformer.git
