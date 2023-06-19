@@ -1,0 +1,15 @@
+request_cpus          = 8
+request_gpus          = 1
+requirements          = regexp("100", TARGET.CUDADeviceName)
+executable            = run.sh
+should_transfer_files = YES
+output                = train.$(ClusterId).$(ProcId).out
+error                 = train.$(ClusterId).$(ProcId).err
+log                   = train.$(ClusterId).log
+use_x509userproxy     = true
+WhenToTransferOutput  = ON_EXIT
+want_graceful_removal = true
+
++JobFlavour = "tomorrow"
+
+queue
