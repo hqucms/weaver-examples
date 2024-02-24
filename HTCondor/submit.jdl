@@ -1,6 +1,6 @@
 request_cpus          = 8
 request_gpus          = 1
-requirements          = regexp("100", TARGET.CUDADeviceName)
+requirements          = regexp("100", TARGET.GPUs_DeviceName)
 executable            = run.sh
 should_transfer_files = YES
 output                = train.$(ClusterId).$(ProcId).out
